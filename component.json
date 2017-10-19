@@ -1,0 +1,26 @@
+{
+  "title": "TestWebhook",
+  "description": "Elastic.IO component TaskHook",
+  "docsUrl": "https://github.com/h3y/TestWebhook.git",
+  "credentials": {
+    "fields": {
+      "apiKey": {
+        "label": "Your apiKey key[test]",
+        "required": true,
+        "viewClass": "TextFieldView",
+        "prompt": "Your apiKey key"
+      }
+    }
+  },
+  "actions": {},
+  "triggers": {
+    "addTaskHook": {
+      "main": "./lib/triggers/addTaskHook.js",
+      "title": "test",
+      "metadata": {
+        "in": "./lib/schemas/addTaskHook.out.json",
+        "out": {}
+      }
+    }
+  }
+}
