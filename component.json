@@ -12,14 +12,11 @@
       }
     }
   },
-  "actions": {},
   "triggers": {
     "addTaskHookPooling": {
-      "type":"webhook",
       "main": "./lib/triggers/addTaskHook.js",
       "title": "test",
       "metadata": {
-        "in": {},
         "out": "./lib/schemas/addTaskHook.out.json"
       }
     }
