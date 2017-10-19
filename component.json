@@ -18,8 +18,8 @@
       "main": "./lib/triggers/addTaskHook.js",
       "title": "test",
       "metadata": {
-        "in": "./lib/schemas/addTaskHook.out.json",
-        "out": {}
+        "in": {},
+        "out": "./lib/schemas/addTaskHook.out.json"
       }
     }
   }
