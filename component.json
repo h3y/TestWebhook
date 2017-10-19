@@ -14,8 +14,29 @@
   },
   "actions": {},
   "triggers": {
-    "addTaskHook": {
+    "addTaskHookPooling": {
       "type":"polling",
+      "main": "./lib/triggers/addTaskHook.js",
+      "title": "test",
+      "fields": {
+        "field1": {
+          "label": "Field 1",
+          "required": true,
+          "viewClass": "TextFieldView"
+        },
+        "field2": {
+          "label": "Field 2",
+          "required": false,
+          "viewClass": "TextFieldView"
+        }
+      },
+      "metadata": {
+        "in": {},
+        "out": "./lib/schemas/addTaskHook.out.json"
+      }
+    },
+    "addTaskHookWebhook": {
+      "type":"webhook",
       "main": "./lib/triggers/addTaskHook.js",
       "title": "test",
       "fields": {
